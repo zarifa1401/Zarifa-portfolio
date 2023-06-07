@@ -1,0 +1,224 @@
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .hero-section {
+    /* padding: 2.4rem 0 6.4rem 0; */
+    padding: 2.2rem 0 6.2rem 0;
+  }
+  .img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-top: 8%;
+  }
+  .primary-text {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 8%;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+  }
+  .duration {
+    font-weight: 100;
+    font-size: 1.4rem;
+  }
+  .primary {
+    font-size: 1rem;
+    color: #716b6b;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-right: 2rem;
+  }
+  .about {
+    padding: 1.4rem;
+    font-size: 3.8rem;
+    margin-left: 1.8rem;
+    color: #fff;
+  }
+
+  .box-second {
+    height: 260px;
+    width: 600px;
+    border-radius: 3rem;
+    margin-top: 2%;
+  }
+  .s-text {
+    margin-top: 2rem;
+
+    padding-bottom: 1rem;
+  }
+  .description {
+    display: block;
+    font-size: 1rem;
+    margin-left: 1.8rem;
+    margin-top: 0rem;
+    line-height: 1.5;
+  }
+  button[type="submit"] {
+    background-color: rgb(149, 37, 101) !important;
+    color: white;
+
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    width: 13rem;
+    height: 4.8rem;
+    margin-left: 16%;
+    border-radius: 4rem;
+  }
+  .person {
+    font-size: 1rem;
+  }
+  .logo {
+    padding-left: -6rem;
+  }
+  .navigation {
+    gap: 4rem;
+    font-size: 1rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  .only-link:link,
+  .only-link:visited {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(247, 95, 181);
+  }
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+}
+/* 704px for smaller phones */
+
+@media (max-width: 25em) {
+  .hero-section {
+    padding: 1rem 0 4rem 0;
+    height: 100vh;
+    width: 100%;
+  }
+  .btn {
+    margin-left: 4.8rem;
+    margin-bottom: 2.8rem;
+  }
+  .primary-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    word-spacing: 0.2rem;
+  }
+  .box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  .box-second {
+    height: 230px;
+    width: 80rem;
+    margin-top: 20%;
+  }
+  .s-text {
+    margin-top: 1rem;
+    padding-bottom: 1.8rem;
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .icns {
+    margin-top: 1.8rem;
+  }
+  .help {
+    margin-right: 1rem;
+  }
+  .percentage {
+    font-size: 0.8rem;
+  }
+  .works {
+    font-size: 0.8rem;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  form {
+    margin-left: 22%;
+  }
+  button[type="submit"] {
+    background-color: rgb(149, 37, 101) !important;
+    color: white;
+    /* padding: 15px; */
+    padding: 1rem 2rem;
+    border: none;
+
+    width: 13rem;
+    height: 4rem;
+    margin-left: 15%;
+    border-radius: 4rem;
+  }
+  .four {
+    line-height: 1.5;
+  }
+}
